@@ -4,7 +4,7 @@ import { Fragment, useEffect } from "react";
 import { FaCode, FaServer, FaPlug, FaMobileAlt, FaCloudUploadAlt } from "react-icons/fa";
 import { MdAnimation } from "react-icons/md";
 import { SiFastapi } from "react-icons/si";
-import { SiWordpress } from "react-icons/si";
+import { SiPython } from "react-icons/si";
 
 const MyServices = () => {
   useEffect(() => {
@@ -27,14 +27,14 @@ const MyServices = () => {
       aosDesc: "fade-up"
     },
  {
-      icon: <SiWordpress className="text-3xl" />,
-      title: "WordPress Development",
-      description: "Developing fully customized, scalable websites and blogs with WordPress, leveraging its extensive plugin ecosystem and strong global community support.",
-      gradient: "from-blue-600 to-indigo-500",
-      aosIcon: "zoom-in",
-      aosTitle: "flip-right",
-      aosDesc: "fade-up"
-    },
+  icon: <SiPython className="text-3xl" />,
+  title: "Python Development",
+  description: "Building powerful, scalable backend systems and applications using Python, including RESTful APIs, automation scripts, and data-driven solutions with a focus on performance and clean architecture.",
+  gradient: "from-yellow-500 to-blue-500",
+  aosIcon: "zoom-in",
+  aosTitle: "flip-right",
+  aosDesc: "fade-up"
+},
      {
       icon: <SiFastapi className="text-3xl" />,
       title: "API Integration",

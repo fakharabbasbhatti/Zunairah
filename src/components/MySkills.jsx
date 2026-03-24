@@ -8,8 +8,9 @@ import {
   FaReact,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiWordpress, SiTailwindcss } from "react-icons/si";
+import {SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { SiPython } from "react-icons/si";
 
 const MySkills = () => {
   useEffect(() => {
@@ -28,9 +29,8 @@ const MySkills = () => {
     { name: "Tailwind CSS", icon: <SiTailwindcss />, percentage: 90, color: "bg-[#38BDF8]" },
     { name: "Framer Motion", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-[#0055FF]" },
     { name: "JavaScript", icon: <FaJs />, percentage: 75, color: "bg-[#F7DF1E]" },
-    { name: "React.js", icon: <FaReact />, percentage: 80, color: "bg-[#61DAFB]" },
-    { name: "WordPress", icon: <SiWordpress />, percentage: 92, color: "bg-[#21759B]" },
-  ];
+    { name: "React", icon: <FaReact />, percentage: 80, color: "bg-[#61DAFB]" },
+{ name: "Python", icon: <SiPython />, percentage: 90, color: "bg-[#3776AB]" },  ];
 
   // Different AOS animations
   const animations = [

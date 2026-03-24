@@ -1,5 +1,5 @@
 import { Fragment, useEffect } from "react";
-import About from "../Images/fakharabbas.jpeg";
+import About from "../Images/Zunairah.jpg";
 import resume from "../Images/FakharAbbas.pdf";
 import { FaDownload, FaUserTie, FaCode, FaPalette, FaWordpress } from "react-icons/fa";
 import AOS from "aos";
@@ -115,15 +115,11 @@ const AboutMe = () => {
                 data-aos="zoom-in-up"
                 className="text-gray-300 text-base sm:text-lg leading-relaxed"
               >
-                Specializing in React.js & WordPress, I craft exceptional digital
-                experiences with clean, efficient code and pixel-perfect
-                designs. My approach combines technical expertise with creative
-                problem-solving to deliver intuitive, high-performance web
-                applications that users love.
+                Specializing in React.js and Python, I build scalable, high-performance web applications with a focus on clean architecture and seamless user experience. I have hands-on experience developing responsive front-end interfaces, RESTful APIs, and dynamic dashboards. My work emphasizes maintainability, performance optimization, and intuitive design. I enjoy turning complex requirements into efficient, user-friendly solutions while continuously improving my skills with modern tools and best practices.
               </p>
 
               {/* Skills */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
                 {skills.map((skill, index) => (
                   <div
                     key={index}
@@ -142,7 +138,7 @@ const AboutMe = () => {
                     </p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               {/* Button */}
               <div className="flex justify-center lg:justify-start">

@@ -4,9 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const socialLinks = [
-  { icon: <FaGithub />, href: "https://github.com/fakharabbasbhatti", label: "GitHub", color: "hover:text-gray-400" },
+  { icon: <FaGithub />, href: "https://github.com/ZUNAIRAH123", label: "GitHub", color: "hover:text-gray-400" },
   { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/fakhar-abbas-bhatti/", label: "LinkedIn", color: "hover:text-blue-500" },
-  { icon: <FaEnvelope />, href: "mailto:fakharabbasbhatti333@gmail.com", label: "Email", color: "hover:text-[#38bdf8]" },
+  { icon: <FaEnvelope />, href: "mailto:Zunairaabdulrehman657@gmail.com", label: "Email", color: "hover:text-[#38bdf8]" },
 ];
 
 const quickLinks = [
@@ -108,7 +108,7 @@ export default function Footer() {
         <div className="flex flex-col items-center max-w-screen-xl mx-auto border-t border-gray-300 pt-5 text-gray-200 text-sm">
           <p>
             Made with <span className="text-red-500">❤️</span> by{" "}
-            <span className="font-bold">Fakhar Abbas</span> © {new Date().getFullYear()}
+            <span className="font-bold">Zunairah Rehman</span> © {new Date().getFullYear()}
           </p>
         </div>
       </div>

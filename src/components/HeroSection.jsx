@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from "react";
-import { FaPaperPlane, FaRocket, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaPaperPlane, FaRocket,FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import Hero from "../Images/Zunairah.jpg";
@@ -17,32 +18,31 @@ const HeroSection = () => {
   }, []);
 
   const socialLinks = [
-   {
-      icon: <FaLinkedinIn className="h-5 w-5" />,
-      onClick: () => window.open("", "_blank"),
-      color: "hover:bg-blue-500 hover:shadow-[0_0_15px_#38bdf8]",
-      aos: "flip-up",
-    },
-     {
-      icon: <FaTiktok className="h-5 w-5" />,
-      onClick: () => window.open("https://www.tiktok.com/", "_blank"),
-      color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
-      aos: "flip-right",
-    },
-     {
-      icon: <FaFacebookF className="h-5 w-5" />,
-      onClick: () => window.open("https://facebook.com", "_blank"),
-      color: "hover:bg-blue-600 hover:shadow-[0_0_15px_#2563eb]",
-      aos: "flip-left",
-    },
-    {
-      icon: <FaGithub className="h-5 w-5" />,
-      onClick: () => window.open("https://github.com/fakharabbasbhatti", "_blank"),
-      color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
-      aos: "flip-right",
-    },
-  ];
-
+  {
+    icon: <FaLinkedinIn className="h-5 w-5" />,
+    onClick: () => window.open("https://www.linkedin.com/in/zunairah-abdul-rehman", "_blank"),
+    color: "hover:bg-blue-500 hover:shadow-[0_0_15px_#38bdf8]",
+    aos: "flip-up",
+  },
+  {
+    icon: <FaInstagramSquare className="h-5 w-5" />,
+    onClick: () => window.open("https://www.instagram.com/codr2025?igsh=MWZ6MHhpcDExbnA2aA==", "_blank"),
+    color: "hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FCAF45] hover:shadow-[0_0_15px_#E1306C]",
+    aos: "flip-left",
+  },
+  {
+    icon: <FaGithub className="h-5 w-5" />,
+    onClick: () => window.open("https://github.com/ZUNAIRAH123", "_blank"),
+    color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
+    aos: "flip-right",
+  },
+  {
+    icon: <FaTiktok className="h-5 w-5" />,
+    onClick: () => window.open("https://www.tiktok.com/", "_blank"),
+    color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
+    aos: "flip-right",
+  },
+];
   return (
     <Fragment>
       <section
