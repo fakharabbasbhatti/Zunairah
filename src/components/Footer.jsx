@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const socialLinks = [
   { icon: <FaGithub />, href: "https://github.com/ZUNAIRAH123", label: "GitHub", color: "hover:text-gray-400" },
-  { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/fakhar-abbas-bhatti/", label: "LinkedIn", color: "hover:text-blue-500" },
+  { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/zunairah-abdul-rehman", label: "LinkedIn", color: "hover:text-blue-500" },
   { icon: <FaEnvelope />, href: "mailto:Zunairaabdulrehman657@gmail.com", label: "Email", color: "hover:text-[#38bdf8]" },
 ];
 

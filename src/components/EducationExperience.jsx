@@ -32,7 +32,7 @@ const EducationExperience = () => {
     {
       title: "React Developer",
       period: "2024 - 2025",
-      company: "Etc Company",
+      company: "Za Coders Company",
       icon: <FaBriefcase className="text-white text-2xl" />,
     },
     {
