@@ -70,7 +70,7 @@ function App() {
 
       {/* WhatsApp Icon */}
       <a
-        href="https://wa.me/9232292345045"
+        href="https://wa.me/923159834167"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform"

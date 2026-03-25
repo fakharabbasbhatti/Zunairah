@@ -30,10 +30,10 @@ const MyContact = () => {
   };
 
   const contactInfo = [
-    { icon: <MdLocationPin className="text-3xl text-[#38bdf8]" />, text: "Bahawalpur, Punjab, Pakistan", link: "#" },
-    { icon: <CgMail className="text-3xl text-[#38bdf8]" />, text: "fakharabbasbhatti333", link: "mailto:fakharabbasbhatti333@gmail.com" },
-    { icon: <FaPhoneAlt className="text-3xl text-[#38bdf8]" />, text: "+92 322-9234045", link: "tel:+923086046246" },
-      { icon: <CgWebsite className="text-3xl text-[#38bdf8]" />, text: "https://fakhar-abbas-dev.vercel.app/", link: " n" },
+    { icon: <MdLocationPin className="text-3xl text-[#38bdf8]" />, text: "Burewala, Punjab, Pakistan", link: "#" },
+    { icon: <CgMail className="text-3xl text-[#38bdf8]" />, text: "Zunaira Abdul Rehman", link: "mailto:Zunairaabdulrehman657@gmail.com" },
+    { icon: <FaPhoneAlt className="text-3xl text-[#38bdf8]" />, text: "+92 315 9834167", link: "tel:+923159834167" },
+      { icon: <CgWebsite className="text-3xl text-[#38bdf8]" />, text: "https://zunaira-rehman.vercel.app/", link: "https://zunaira-rehman.vercel.app/" },
   ];
 
   return (
