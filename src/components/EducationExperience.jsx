@@ -36,7 +36,7 @@ const EducationExperience = () => {
       icon: <FaBriefcase className="text-white text-2xl" />,
     },
     {
-      title: "Python Developer",
+      title: "Machine Learning",
       period: "Jan 2025 - Present",
       company: "Etc Company (Onsite)",
       icon: <FaBriefcase className="text-white text-2xl" />,

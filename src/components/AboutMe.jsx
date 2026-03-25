@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
 import About from "../Images/Zunairah.jpg";
-import resume from "../Images/FakharAbbas.pdf";
+import resume from "../Images/Zunairah.pdf";
 import { FaDownload, FaUserTie, FaCode, FaPalette, FaWordpress } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -98,7 +98,7 @@ const AboutMe = () => {
                   data-aos-delay="200"
                   className="absolute bottom-3 right-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
                 >
-                  Python Developer
+                  Machine Learning
                 </span>
               </div>
             </div>
@@ -111,7 +111,7 @@ const AboutMe = () => {
                 className="text-2xl sm:text-3xl font-bold text-white"
               >
                 I'm <span className="text-[#38bdf8]">Zunairah Rehman</span>, a
-                passionate React Developer & Python Developer
+                passionate React Developer & Machine Learning
               </h2>
 
               <p

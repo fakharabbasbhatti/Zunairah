@@ -1,9 +1,10 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Fragment, useEffect } from "react";
-import { FaCode, FaServer, FaPlug, FaMobileAlt, FaCloudUploadAlt } from "react-icons/fa";
+import { FaCode,FaMobileAlt, FaCloudUploadAlt } from "react-icons/fa";
 import { MdAnimation } from "react-icons/md";
-import { SiFastapi, SiPython } from "react-icons/si";
+import { GrVirtualMachine } from "react-icons/gr";
+import { SiFastapi } from "react-icons/si";
 
 const MyServices = () => {
   useEffect(() => {
@@ -26,14 +27,14 @@ const MyServices = () => {
       aosDesc: "fade-up"
     },
     {
-      icon: <SiPython className="text-3xl" />,
-      title: "Python Development",
-      description: "Building powerful, scalable backend systems and applications using Python, including RESTful APIs, automation scripts, and data-driven solutions with a focus on performance and clean architecture.",
-      gradient: "from-yellow-500 to-blue-500",
-      aosIcon: "zoom-in",
-      aosTitle: "flip-right",
-      aosDesc: "fade-up"
-    },
+  icon: <GrVirtualMachine className="text-3xl" />,
+  title: "Machine Learning",
+  description: "Designing and building intelligent systems using machine learning techniques, including predictive models, data analysis, and AI-driven solutions with a focus on accuracy.",
+  gradient: "from-yellow-500 to-blue-500",
+  aosIcon: "zoom-in",
+  aosTitle: "flip-right",
+  aosDesc: "fade-up"
+},
     {
       icon: <SiFastapi className="text-3xl" />,
       title: "API Integration",
@@ -110,7 +111,7 @@ const MyServices = () => {
                     <div 
                       data-aos={service.aosIcon} 
                       data-aos-delay={index * 100}
-                      className="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl bg-gray-700 group-hover:bg-white transition-all duration-500"
+                      className="w-16 h-16 mb-5 flex items-center justify-center rounded-2xl bg-gray-700 group-hover:bg-white transition-all duration-500"
                     >
                       <span className="text-[#38bdf8] group-hover:scale-125 transition-transform duration-500">
                         {service.icon}
@@ -119,7 +120,7 @@ const MyServices = () => {
                     <h3 
                       data-aos={service.aosTitle} 
                       data-aos-delay={index * 150} 
-                      className="text-2xl font-semibold text-white mb-3"
+                      className="text-2xl font-semibold text-white mb-0"
                     >
                       {service.title}
                     </h3>

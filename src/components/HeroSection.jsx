@@ -183,7 +183,7 @@ const HeroSection = () => {
                 React Developer
               </div>
               <div className="absolute bottom-2 right-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">
-                Python Developer
+                Machine Learning
               </div>
             </div>
           </div>
