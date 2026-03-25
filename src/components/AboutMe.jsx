@@ -49,14 +49,16 @@ const AboutMe = () => {
     <Fragment>
       <div
         id="about"
-        className="relative py-16  bg-gray-900 overflow-hidden"
+        className="relative py-16 bg-gray-900 overflow-hidden"
       >
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-28 sm:w-40 h-28 sm:h-40 bg-[#38bdf8] opacity-10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-purple-600 opacity-10 rounded-full blur-3xl animate-float-delay"></div>
 
-        <div className="max-w-7xl">
-          {/* About Me Title */}
+        {/* ✅ FIXED CONTAINER */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Title */}
           <h1
             data-aos="fade-up"
             className="text-3xl sm:text-4xl font-bold text-white text-center mb-10"
@@ -65,13 +67,14 @@ const AboutMe = () => {
           </h1>
 
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
-            {/* Image Section */}
+            
+            {/* Image */}
             <div
               data-aos="zoom-in-down"
-              className="w-full lg:w-2/5 relative group flex justify-center"
+              className="w-full lg:w-2/5 relative group flex justify-center lg:justify-start"
             >
               <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float-slow">
-                {/* hover background glow */}
+                
                 <div className="absolute inset-0 rounded-full bg-[#38bdf8]/20 opacity-0 group-hover:opacity-100 transition duration-700 blur-3xl"></div>
 
                 <img
@@ -79,16 +82,17 @@ const AboutMe = () => {
                   alt="Zunaira"
                   className="w-full h-full object-cover rounded-full p-3 sm:p-4 border-4 border-[#38bdf8] z-10 relative shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:rotate-3"
                 />
+
                 <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-30 z-0 animate-pulse"></div>
                 <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-15 z-0 animate-pulse-delay"></div>
 
-                {/* Badges inside image */}
                 <span
                   data-aos="fade-down"
                   className="absolute top-3 left-3 bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
                 >
                   React Developer
                 </span>
+
                 <span
                   data-aos="fade-up"
                   data-aos-delay="200"
@@ -99,9 +103,9 @@ const AboutMe = () => {
               </div>
             </div>
 
-            {/* Content Section */}
-            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
-              {/* Name */}
+            {/* Content */}
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+              
               <h2
                 data-aos="zoom-in"
                 className="text-2xl sm:text-3xl font-bold text-white"
@@ -110,7 +114,6 @@ const AboutMe = () => {
                 passionate React Developer & Python Developer
               </h2>
 
-              {/* Description */}
               <p
                 data-aos="zoom-in-up"
                 className="text-gray-300 text-base sm:text-lg leading-relaxed"
@@ -118,30 +121,8 @@ const AboutMe = () => {
                 Specializing in React.js and Python, I build scalable, high-performance web applications with a focus on clean architecture and seamless user experience. I have hands-on experience developing responsive front-end interfaces, RESTful APIs, and dynamic dashboards. My work emphasizes maintainability, performance optimization, and intuitive design. I enjoy turning complex requirements into efficient, user-friendly solutions while continuously improving my skills with modern tools and best practices.
               </p>
 
-              {/* Skills */}
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-                {skills.map((skill, index) => (
-                  <div
-                    key={index}
-                    data-aos={skill.aos}
-                    data-aos-delay={index * 150}
-                    className="bg-gray-800 p-5 sm:p-6 rounded-xl hover:bg-gray-700 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-lg hover:shadow-[#38bdf8]/30"
-                  >
-                    <div className="flex items-center justify-center lg:justify-start gap-3 mb-3">
-                      {skill.icon}
-                      <h3 className="text-white font-medium text-lg">
-                        {skill.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-400 text-sm sm:text-base">
-                      {skill.description}
-                    </p>
-                  </div>
-                ))}
-              </div> */}
-
               {/* Button */}
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex justify-center lg:justify-start w-full">
                 <button
                   onClick={handleDownload}
                   data-aos="flip-up"
@@ -151,67 +132,34 @@ const AboutMe = () => {
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
-      {/* Animations */}
+      {/* Animations (UNCHANGED) */}
       <style jsx global>{`
         @keyframes float {
-          0%,
-          100% {
-            transform: translateY(0) translateX(0);
-          }
-          50% {
-            transform: translateY(-20px) translateX(10px);
-          }
+          0%, 100% { transform: translateY(0) translateX(0); }
+          50% { transform: translateY(-20px) translateX(10px); }
         }
         @keyframes float-slow {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
         }
         @keyframes pulse {
-          0%,
-          100% {
-            opacity: 0.3;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.5;
-            transform: scale(1.05);
-          }
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.5; transform: scale(1.05); }
         }
         @keyframes pulse-delay {
-          0%,
-          100% {
-            opacity: 0.15;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.25;
-            transform: scale(1.1);
-          }
+          0%, 100% { opacity: 0.15; transform: scale(1); }
+          50% { opacity: 0.25; transform: scale(1.1); }
         }
-        .animate-float {
-          animation: float 8s ease-in-out infinite;
-        }
-        .animate-float-delay {
-          animation: float 10s ease-in-out infinite 2s;
-        }
-        .animate-float-slow {
-          animation: float-slow 6s ease-in-out infinite;
-        }
-        .animate-pulse {
-          animation: pulse 4s ease-in-out infinite;
-        }
-        .animate-pulse-delay {
-          animation: pulse-delay 4s ease-in-out infinite 2s;
-        }
+        .animate-float { animation: float 8s ease-in-out infinite; }
+        .animate-float-delay { animation: float 10s ease-in-out infinite 2s; }
+        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+        .animate-pulse { animation: pulse 4s ease-in-out infinite; }
+        .animate-pulse-delay { animation: pulse-delay 4s ease-in-out infinite 2s; }
       `}</style>
     </Fragment>
   );

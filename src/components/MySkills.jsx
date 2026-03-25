@@ -30,9 +30,9 @@ const MySkills = () => {
     { name: "Framer Motion", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-[#0055FF]" },
     { name: "JavaScript", icon: <FaJs />, percentage: 75, color: "bg-[#F7DF1E]" },
     { name: "React", icon: <FaReact />, percentage: 80, color: "bg-[#61DAFB]" },
-{ name: "Python", icon: <SiPython />, percentage: 90, color: "bg-[#3776AB]" },  ];
+    { name: "Python", icon: <SiPython />, percentage: 90, color: "bg-[#3776AB]" },
+  ];
 
-  // Different AOS animations
   const animations = [
     "fade-up",
     "fade-down",
@@ -45,7 +45,7 @@ const MySkills = () => {
   ];
 
   return (
-    <section id="skills" className="relative py-20 px-6 bg-gray-900 overflow-hidden">
+    <section id="skills" className="relative py-20 bg-gray-900 overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background gradient effects */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-[#38bdf8] opacity-20 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-60 h-60 bg-[#0ea5e9] opacity-20 rounded-full blur-3xl animate-float-delay"></div>
@@ -72,24 +72,21 @@ const MySkills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
             <div
-              data-aos={animations[index % animations.length]} // Different AOS per card
+              data-aos={animations[index % animations.length]}
               data-aos-delay={index * 120}
               key={index}
               className="relative bg-gray-800/60 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 h-64 flex flex-col justify-between transition-all duration-500 hover:shadow-xl hover:shadow-[#38bdf8]/30 hover:-translate-y-2"
             >
-              {/* Icon */}
               <div className="flex justify-center items-center mb-4">
                 <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 text-4xl text-[#38bdf8] group-hover:scale-110 transition-transform duration-500">
                   {skill.icon}
                 </div>
               </div>
 
-              {/* Skill Name */}
               <h3 className="text-xl font-semibold text-white text-center">
                 {skill.name}
               </h3>
 
-              {/* Progress Bar */}
               <div className="mt-4">
                 <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
                   <div

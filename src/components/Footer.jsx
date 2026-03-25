@@ -38,7 +38,7 @@ export default function Footer() {
 
       {/* Top Section */}
       <div className="bg-gray-900 text-white relative z-10">
-        <div className="max-w-screen-xl mx-auto grid md:grid-cols-4 sm:grid-cols-2 px-6 py-4 pt-4 gap-10">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 sm:grid-cols-2 px-6 py-4 pt-4 gap-10">
           {/* About Me */}
           <div data-aos="fade-up">
             <h3 className="text-2xl font-bold mb-4 flex items-center">

@@ -1,5 +1,5 @@
 import { Fragment, useEffect } from "react";
-import { FaPaperPlane, FaRocket,FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaPaperPlane, FaRocket, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
@@ -18,31 +18,32 @@ const HeroSection = () => {
   }, []);
 
   const socialLinks = [
-  {
-    icon: <FaLinkedinIn className="h-5 w-5" />,
-    onClick: () => window.open("https://www.linkedin.com/in/zunairah-abdul-rehman", "_blank"),
-    color: "hover:bg-blue-500 hover:shadow-[0_0_15px_#38bdf8]",
-    aos: "flip-up",
-  },
-  {
-    icon: <FaInstagramSquare className="h-5 w-5" />,
-    onClick: () => window.open("https://www.instagram.com/codr2025?igsh=MWZ6MHhpcDExbnA2aA==", "_blank"),
-    color: "hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FCAF45] hover:shadow-[0_0_15px_#E1306C]",
-    aos: "flip-left",
-  },
-  {
-    icon: <FaGithub className="h-5 w-5" />,
-    onClick: () => window.open("https://github.com/ZUNAIRAH123", "_blank"),
-    color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
-    aos: "flip-right",
-  },
-  {
-    icon: <FaTiktok className="h-5 w-5" />,
-    onClick: () => window.open("https://www.tiktok.com/", "_blank"),
-    color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
-    aos: "flip-right",
-  },
-];
+    {
+      icon: <FaLinkedinIn className="h-5 w-5" />,
+      onClick: () => window.open("https://www.linkedin.com/in/zunairah-abdul-rehman", "_blank"),
+      color: "hover:bg-blue-500 hover:shadow-[0_0_15px_#38bdf8]",
+      aos: "flip-up",
+    },
+    {
+      icon: <FaInstagramSquare className="h-5 w-5" />,
+      onClick: () => window.open("https://www.instagram.com/codr2025?igsh=MWZ6MHhpcDExbnA2aA==", "_blank"),
+      color: "hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#FCAF45] hover:shadow-[0_0_15px_#E1306C]",
+      aos: "flip-left",
+    },
+    {
+      icon: <FaGithub className="h-5 w-5" />,
+      onClick: () => window.open("https://github.com/ZUNAIRAH123", "_blank"),
+      color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
+      aos: "flip-right",
+    },
+    {
+      icon: <FaTiktok className="h-5 w-5" />,
+      onClick: () => window.open("https://www.tiktok.com/", "_blank"),
+      color: "hover:bg-gray-800 hover:shadow-[0_0_15px_#6b7280]",
+      aos: "flip-right",
+    },
+  ];
+
   return (
     <Fragment>
       <section
@@ -64,10 +65,11 @@ const HeroSection = () => {
           ></div>
         </div>
 
-        {/* ✅ Changed flex direction */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-12 w-full max-w-7xl z-10 py-20">
+        {/* ✅ FIXED CONTAINER ONLY */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-12 w-full z-10 py-20">
+          
           {/* Left Section */}
-          <div className="w-full md:w-1/2 text-center md:text-start">
+          <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start">
             <span
               data-aos="fade-down"
               className="text-[#38bdf8] font-mono tracking-widest text-base sm:text-lg"
@@ -103,14 +105,14 @@ const HeroSection = () => {
               data-aos="fade-up"
               className="text-gray-300 text-base sm:text-lg mb-8 max-w-lg mx-auto md:mx-0"
             >
-              I design modern, responsive websites with clean code,<span className="text-[#38bdf8] font-semibold"> fluid animations </span> &
-              <span className="text-[#0ea5e9] font-semibold"> intuitive user experiences, </span>  
-                  delivering engaging digital solutions that merge creativity, performance, and seamless functionality.
+              I design modern, responsive websites with clean code,
+              <span className="text-[#38bdf8] font-semibold"> fluid animations </span> &
+              <span className="text-[#0ea5e9] font-semibold"> intuitive user experiences, </span>
+              delivering engaging digital solutions that merge creativity, performance, and seamless functionality.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-row gap-3 sm:gap-4 mb-10 justify-center sm:justify-start">
-              {/* Contact Me */}
+            <div className="flex flex-wrap gap-3 sm:gap-4 mb-10 justify-center md:justify-start">
               <button
                 data-aos="fade-down"
                 className="relative bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] 
@@ -124,7 +126,6 @@ const HeroSection = () => {
                 <span className="z-10">Contact Me</span>
               </button>
 
-              {/* View Projects */}
               <button
                 data-aos="fade-up"
                 className="relative border-2 border-[#38bdf8] text-[#38bdf8] px-4 py-2 sm:px-6 sm:py-3 
@@ -140,22 +141,22 @@ const HeroSection = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="mt-8">
+            <div className="mt-0">
               <h2
                 data-aos="fade-down"
                 className="text-gray-400 mb-4 tracking-wide text-sm sm:text-base"
               >
                 🌐 Connect with me
               </h2>
-              <div className="flex justify-center md:justify-start items-center gap-2">
+
+              <div className="flex justify-center md:justify-start items-center gap-3 flex-wrap">
                 {socialLinks.map((item, index) => (
                   <button
                     key={index}
                     data-aos={item.aos}
                     onClick={item.onClick}
-                    aria-label="Social Link"
-                    className={`text-white cursor-pointer flex justify-center items-center bg-gray-800 ${item.color} 
-                               h-10 w-10 sm:h-12 sm:w-12 rounded-full transition-all duration-500 transform hover:scale-110`}
+                    className={`text-white flex justify-center items-center bg-gray-800 ${item.color} 
+                               h-10 w-10 sm:h-12 sm:w-12 rounded-full transition-all duration-500 transform hover:scale-110 cursor-pointer`}
                   >
                     {item.icon}
                   </button>
@@ -164,23 +165,20 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Section (Hero Image) */}
-          <div data-aos="zoom-in" className="w-full md:w-1/2 flex justify-center relative">
+          {/* Right Section */}
+          <div data-aos="zoom-in" className="w-full md:w-1/2 flex justify-center md:justify-end relative">
             <div className="relative h-[250px] w-[250px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] animate-float-slow group">
               <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-30 animate-pulse"></div>
               <div className="absolute inset-0 rounded-full border-4 border-[#0ea5e9] opacity-20 animate-pulse-delay"></div>
 
-              {/* Hover Glow */}
               <div className="absolute inset-0 rounded-full scale-0 group-hover:scale-110 opacity-0 group-hover:opacity-80 transition-all duration-700 bg-gradient-to-r from-[#38bdf8] via-[#0ea5e9] to-[#38bdf8] blur-3xl"></div>
 
-              {/* Profile Image */}
               <img
                 src={Hero}
                 alt="Zunairah profile"
                 className="w-full h-full object-cover rounded-full border-4 border-[#38bdf8] shadow-2xl relative transition-all duration-700 group-hover:scale-105 group-hover:rotate-3 p-3 sm:p-5"
               />
 
-              {/* Badges */}
               <div className="absolute top-2 left-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">
                 React Developer
               </div>

@@ -77,7 +77,7 @@ const MyProjects = () => {
           <div className="text-center mb-16">
             <h1
               data-aos="fade-down"
-              className="text-4xl md:text-5xl font-extrabold text-white mb-4 relative inline-block tracking-tight"
+              className="text-4xl md:text-5xl font-bold text-white mb-4 relative inline-block tracking-tight"
             >
               My{" "}
               <span className="text-[#38bdf8] bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
